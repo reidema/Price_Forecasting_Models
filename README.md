@@ -71,7 +71,7 @@ Sources:
 # Models
 <br />
 
-## 1. Model 1: Time-Series Forecasting with Prophet()
+## Model 1: Time-Series Forecasting with Prophet()
 <br />
 
 ![Time-Series Forecasting with Prophet](Images/Model%201%20-%20Prophet()%20Forecast%20Plot.png)
@@ -96,7 +96,7 @@ In conclusion, although the R-Squared for this model indicates that it is a good
 <br />
 <br />
 
-## 2. Model 2: Time-Series Forecasting with Neural Prophet()
+## Model 2: Time-Series Forecasting with Neural Prophet()
 <br />
 
 ![Time-Series Forecasting with Neural Prophet](Images/Model%202-%20Neural%20Prophet%20Forecast%20Plot.png)
@@ -131,7 +131,7 @@ In reviewing the Model 2 Forecast graph above, one can see that the forecast gra
 <br />
 <br />
 
-## 3. Model 3: Time-Series Forecasting with PyAF or Python Automatic Forecasting
+## Model 3: Time-Series Forecasting with PyAF or Python Automatic Forecasting
 <br />
 
 ![Time-Series Forecasting with PyAF or Python Automatic Forecasting](Images/Model%203%20-%20PyAF%20Forecast%20Plot.png)
