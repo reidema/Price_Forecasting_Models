@@ -7,32 +7,32 @@
 ## Group members 
 <br />
 
-* _Gizel Norman Valenzuela_ 
-* _Kiran Sohi_
-* _Rei Dema_
-* _Sujatha Selvaraj_
-* _Terence Schultz_
+* Gizel Norman Valenzuela
+* Kiran Sohi
+* Rei Dema
+* Sujatha Selvaraj
+* Terence Schultz
 <br />
 <br />
 
 ## Project Description
 <br />
 
-Project 2 is aiming to build a cryptocurrency price forecaster for users who will input the cryptocurrency they are interested in and the time horizon they are seeking to invest. 
+The aim of Project 2 is to build a cryptocurrency price forecaster for users who will input the cryptocurrency they are interested in and the time horizon they are seeking to invest. 
 
 Libraries used:
-* pandas
-* numpy
-* yfinance
-* matplotlib
-* holoviews
-* hvplot
-* prophet
-* neural prophet
-* pyaf
-* tensorflow
-* sklearn
-* keras
+* _pandas_
+* _numpy_
+* _yfinance_
+* _matplotlib_
+* _holoviews_
+* _hvplot_
+* _prophet_
+* _neural prophet_
+* _pyaf_
+* _tensorflow_
+* _sklearn_
+* _keras_
 
 The data for each cryptocurrency was taken from Yahoo Finance using the yfinance library.
 
@@ -127,7 +127,7 @@ Compared to Model 1, the RMSE are similar, Model 1 - 4425 vs. Model 2 - 4684 but
 
 In conclusion, Model 2 makes poor predictions (high RMSE), but they’re systematically wrong in having a roughly constant bias (high R²). So even though the predictions are poor, there’s still some hope since the predictor strongly determines the observed value. It’s just that the model requires further fine tuning and review to become a better predictor of price.
 
-In reviewing the Model 2: Forecast section below, one can see that the forecast graph is reasonably able to predict price forecast for the next 365 days. It is important to note that unlike Model 1 Prophet(), there are no negative prices indicated by the model. There is clearly a downward shift based on the training but the prices do start to rise in about a year's time. Once again, NeuralProphet() seems to be the best model thus far, although not perfect by any means.
+In reviewing the Model 2 Forecast graph above, one can see that the forecast graph is reasonably able to predict price forecast for the next 365 days. It is important to note that unlike Model 1 Prophet(), there are no negative prices indicated by the model. There is clearly a downward shift based on the training but the prices do start to rise in about a year's time. NeuralProphet() seems to be the best model thus far, although not perfect by any means.
 <br />
 <br />
 
@@ -188,16 +188,13 @@ The following sources were used to build a LSTM RNN model and results were compa
 
 R2-Squared is close to 89% for LSTM RNN model. Review the remainder of the errors below, one can see that the values have been assessed to be very small.
 
-Mean squared error: 0.00
-Mean absolute error: 0.04
-Root mean squared error: 0.20
 Going strictly by the numbers, Low RMSE which is good and high R² which is also good is the best case scenario. It is best becasue the predictions are accurate (low RMSE) and the predictor mostly determines the observed value (high R²). A low RMSE means that the residuals are tight around 0, relative to the response variable’s scale.
 
 But in reviewing the final ouput, there seems to be something strange about the predictions. They have smoothed out to the point where majority of the output are near 0.
 
 There can be a number of reasons for this.
 
-The data inverse transforamtion did not work in the same way as originally applied when transforming the prophet_df dataset for input into LSTM RNN. A proper pipeline needs to be created to ensure that ouput can be inverse_transformed in the same way as required for the initial transformation for model fitting.
+The data inverse transformation did not work in the same way as originally applied when transforming the prophet_df dataset for input into LSTM RNN. A proper pipeline needs to be created to ensure that ouput can be inverse_transformed in the same way as required for the initial transformation for model fitting.
 
 As there was only one feature, the model overfitted and smoothed out the predictions by overemphasizing the loss function, i.e., MSE which is 0 at conclusion.
 
@@ -219,5 +216,3 @@ In conclusion, Model 2: Time-Series Forecasting with Neural Prophet() was chosen
 Clearly more fine tuning is required to ensure that the RMSE is further reduced while increasing the R2-Squared value.
 
 Further improvement in visualization of future forecast and testing with other cryptocurrency is required.
-
-It is, nonetheless, a beginning.
